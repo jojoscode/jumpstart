@@ -1,0 +1,169 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  line-height: 1.4;
+}
+
+
+/* Navigation */
+.navbar {
+  background-color: #f3f3f3;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: inherit;
+  color: #399bd1;
+}
+
+/* instructions call for this - unsure what is needed - color? */
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #399bd1;
+}
+
+/* Jumbotron */
+.jumbotron {
+  height: 44rem;
+  padding-top: 10rem;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  /*margin-top: 50px; for navigation z-index ?*/
+}
+
+.jumbotron-bike {
+  background-image: url("../images/jumbotron-bike.jpg");
+}
+
+.jumbotron-beer {
+  background-image: url("../images/jumbotron-beer.jpg");
+}
+
+.jumbotron-flowers {
+  background-image: url("../images/jumbotron-flowers.jpg");
+}
+
+.jumbotron-duffel {
+  background-image: url("../images/jumbotron-duffel.jpg");
+}
+
+.jumbotron h1 {
+  font-family: "Monoton", "Helvetica", sans-serif;
+  font-size: 7.1rem;
+  /* margin-top: 11.85rem;  How does this placement work without the margin top? */
+}
+
+.jumbotron p {
+  max-width: 51.3rem;
+  margin: auto;
+}
+
+.relative-wrapper {
+  position: relative;
+  top: -16rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: -8rem;
+}
+/* margin-bottom: -8rem = don't think this is correct, but button's relative position left space for it in the DOM */
+
+.btn-primary {
+  background-color: #399bd1;
+  padding: 1.3rem 0;
+  border: 0;
+  width: 11.4rem;
+  margin-top: 2.8rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary:active {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary:hover {
+  background-color: #399bd1;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+  transition: .5s;
+}
+
+/* Featured Project */
+h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #399bd1;
+}
+
+.featured-project .image-container {
+  height: 19rem;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.categories h3 {
+  color: #399bd1;
+}
+
+.categories ul {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  opacity: 0.7;
+  width: 100%;
+  transition: transform .5s, opacity .5s;
+}
+
+.image-container img:hover {
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+/* Project */
+.project .image-container {
+  height: 13.5rem;
+}
+
+.project {
+  margin-bottom: 5.85rem;
+}
+
+/* Trouble */
+.trouble {
+  padding: 5.2rem 0;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+strong {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.4rem;
+}
+
+.trouble p {
+  max-width: 42rem;
+  margin: auto;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .jumbotron h1 {
+    font-size: 5rem;
+  }
+}
