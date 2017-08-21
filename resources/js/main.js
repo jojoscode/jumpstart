@@ -1,4 +1,4 @@
-S(document).ready(function(){
+$(document).ready(function(){
   $('.carousel').slick({
     SlidesToScroll: 1,
     autoplay: true,
